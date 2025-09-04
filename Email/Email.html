@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Связаться с нами</title>
+    <link rel="stylesheet" href="Email.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="Logo">Ресторан</a>
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <h1 class="form-heading">Связаться с нами</h1>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Электронная почта:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="query">Ваш запрос:</label>
+                    <textarea id="query" name="query" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="text" id="number" name="number" required>
+                </div>
+
+
+                <div class="submitDiv">
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "IYYv4LA5skVE7a-lI",
+            });
+        })();
+    </script>
+    <script src="Email.js"></script>
+</body>
+
+</html>

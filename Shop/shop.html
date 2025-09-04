@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="Shop.js"></script>
+    <link rel="stylesheet" href="Shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Ресторан Магазин</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="Logo">Ресторан</a>
+        <div id="cart-icon">
+            <i style="font-size: 25px;" class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-item-count"></span>
+        </div>
+    </header>
+
+    <div class="cart">
+        <h2 class="cart-title">Ваша корзина</h2>
+        <div class="cart-content">
+            <!-- <div class="cart-box">
+                <img src="./images/product1.jpg" class="cart-img">
+                <div class="cart-detail">
+                    <h2 class="cart-product-title">Casual Black Polo</h2>
+                    <span class="cart-price">$100</span>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <span class="number">1</span>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
+                <i class="fa-solid fa-trash cart-remove"></i>
+            </div> -->
+        </div>
+        <div class="total">
+            <div class="total-title">Общий</div>
+            <div class="total-price">₽0</div>
+        </div>
+        <a style="text-decoration: none;" href="../Email/Email.html">
+           <button class="btn-buy">Купить сейчас</button>
+        </a>
+        <i class="fa fa-times" id="cart-close" aria-hidden="true"></i>
+    </div>
+
+
+    <section class="shop">
+        <h1 class="section-title">Магазин</h1><br>
+        <div class="product-content">
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="./images/product1.jpg">
+                </div>
+                <h2 class="product-title">Дорадо на углях</h2>
+                <div class="price-and-cart">
+                    <span class="price">810₽</span>
+                    <i style="font-size: 25px;" class="fa-solid fa-bag-shopping add-cart"></i>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="./images/product2.jpg">
+                </div>
+                <h2 class="product-title">Картофель молодой</h2>
+                <div class="price-and-cart">
+                    <span class="price">250₽</span>
+                    <i style="font-size: 25px;" class="fa-solid fa-bag-shopping add-cart"></i>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="./images/product3.jpg">
+                </div>
+                <h2 class="product-title">Люля-кебаб из говядины</h2>
+                <div class="price-and-cart">
+                    <span class="price">500₽</span>
+                    <i style="font-size: 25px;" class="fa-solid fa-bag-shopping add-cart"></i>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="./images/product4.jpg">
+                </div>
+                <h2 class="product-title">Шашлык из бараньей корейки</h2>
+                <div class="price-and-cart">
+                    <span class="price">900₽</span>
+                    <i style="font-size: 25px;" class="fa-solid fa-bag-shopping add-cart"></i>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="./images/product5.jpg">
+                </div>
+                <h2 class="product-title">Шашлык из бараньей  мякоти</h2>
+                <div class="price-and-cart">
+                    <span class="price">850₽</span>
+                    <i style="font-size: 25px;" class="fa-solid fa-bag-shopping add-cart"></i>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="./images/product6.jpg">
+                </div>
+                <h2 class="product-title">Люля-кебаб из баранины</h2>
+                <div class="price-and-cart">
+                    <span class="price">680₽</span>
+                    <i style="font-size: 25px;" class="fa-solid fa-bag-shopping add-cart"></i>
+                </div>
+            </div>
+
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="./images/product7.jpg">
+                </div>
+                <h2 class="product-title">Шашлык из куриного филе</h2>
+                <div class="price-and-cart">
+                    <span class="price">530₽</span>
+                    <i style="font-size: 25px;" class="fa-solid fa-bag-shopping add-cart"></i>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="./images/product8.jpg">
+                </div>
+                <h2 class="product-title">Люля-Кебаб из курицы</h2>
+                <div class="price-and-cart">
+                    <span class="price">475₽</span>
+                    <i style="font-size: 25px;" class="fa-solid fa-bag-shopping add-cart"></i>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+</body>
+
+</html>
